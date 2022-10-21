@@ -1,0 +1,318 @@
+.main-container {
+  background-color: #000;
+}
+.nav {
+  z-index: 20;
+}
+.inner-main-container {
+  border-bottom: 8px solid #222;
+  padding-bottom: 50px;
+}
+.bg-img-gd {
+  height: fit-content;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -100px;
+  z-index: 0;
+}
+
+.bg-img-gd img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+.bg-gradient {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.hero-text-from {
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 70px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.space {
+  padding-bottom: 140px;
+}
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+.hero-sub-title {
+  font-size: 1.625rem;
+  margin: 1rem auto;
+  font-weight: 400;
+}
+.hero-title {
+  margin: 0 auto;
+  max-width: 640px;
+}
+h1,
+h2,
+h3,
+.btn {
+  color: #fff;
+}
+.form-sub-title {
+  font-size: 1.2rem;
+  max-width: none;
+  padding: 0 5% 20px 5%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.sgInputField {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 60px !important;
+  min-width: 450px;
+  padding: 0 10px 0;
+}
+.sgInputField {
+  appearance: none;
+  border: 1px solid #8c8c8c;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-size: 16px;
+}
+.sg-form {
+  padding-top: 0.85rem;
+}
+.iField-btn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.error-msg {
+  color: #ffa00a;
+  font-size: 15px;
+  margin-bottom: -6px;
+  padding: 6px 3px;
+  text-align: left;
+}
+.material-symbols-outlined.error {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.btn {
+  cursor: pointer;
+  background-color: #f40612;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid #333;
+  border-top-left-radius: 0;
+  font-size: 1.625rem;
+  min-height: 60px;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0 1em;
+  width: auto;
+  margin-top: -1px;
+}
+.btn-text {
+  padding: 0.9rem 0;
+}
+.material-symbols-outlined {
+  flex: 0 1 auto;
+}
+/* .btm-inputField-Css .input-div {
+  width: 350px;
+} */
+@media only screen and (max-width: 700px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-sub-title {
+    font-size: 1.5rem;
+  }
+  .btn-text {
+    font-size: 1rem;
+  }
+  .form-sub-title {
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin-top: 20px;
+    width: fit-content;
+  }
+  .iField-btn,
+  .inner-animation-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text-from form input {
+    min-width: 90%;
+  }
+  .animation-section {
+    text-align: center;
+  }
+  .a-left-text,
+  .a-right-animation {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+}
+.animation-section {
+  z-index: 0;
+
+  background-color: #000;
+  padding: 70px 45px;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  position: relative;
+}
+.no-margin {
+  margin-top: 0 !important;
+}
+.inner-animation-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.a-right-animation,
+.a-left-text {
+  box-sizing: border-box;
+  height: 100%;
+  width: 48%;
+  overflow: hidden;
+  position: relative;
+}
+.a-left-text,
+.a-right-animation {
+  flex: 0 1 auto;
+  height: 100%;
+  padding: 0 3rem 0 0;
+  width: 52%;
+  z-index: 3;
+}
+.a-right-animation img {
+  z-index: 2;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+.our-story-card-video {
+  z-index: -1;
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.our-story-card-animation {
+  align-items: center;
+  background: #000;
+  border: 2pxsolidhsla (0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.our-story-card-animation .our-story-card-animation-image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+.our-story-card-animation-image img {
+  height: 4.5em;
+}
+.our-story-card-animation .our-story-card-animation-custom {
+  position: absolute;
+  right: 10%;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+.our-story-card-animation .our-story-card-animation-text .text-0 {
+  font-size: 1em;
+  font-weight: 700;
+}
+.our-story-card-animation-text .text-1 {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: 400;
+}
+.our-story-card-animation .our-story-card-animation-custom {
+  height: 3.75em;
+}
+.animation-section.three .our-story-card-video {
+  z-index: -1;
+  height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 50%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-60%, -80%);
+  width: 100%;
+}
+.accordion {
+  z-index: 0;
+  background-color: #000;
+  padding: 70px 45px;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  position: relative;
+}
+.inner-acc-container {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.acc-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.acc-list {
+  margin: 2em auto;
+  width: 75%;
+  max-width: 815px;
+}
+
+
+

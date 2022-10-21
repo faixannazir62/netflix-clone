@@ -1,0 +1,53 @@
+.row {
+  color: #fff;
+  margin-left: 20px;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row__posters::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+.list__item:hover > img {
+  transform: scale(1);
+}
+.list__item:hover::before {
+  background-position: 0% 100%;
+}
+
+.row__posters > .list__item {
+  flex: 0 0 200px;
+  margin-left: 10px;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+  cursor: pointer;
+}
+.list__item > img {
+  width: 100%;
+  margin-right: 10px;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+  object-fit: cover;
+}
+.list__itemTitle {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.trailer {
+  position: relative;
+  z-index: 1;
+}

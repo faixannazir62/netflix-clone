@@ -1,0 +1,30 @@
+.acc-list-item {
+  list-style-type: none;
+  margin: 0 0 8px;
+}
+.question {
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+  background: #303030;
+  display: block;
+  text-align: left;
+}
+.acc-icon {
+  position: absolute;
+  right: 40px;
+}
+.ans {
+  font-size: 1.4rem;
+
+  padding: 1.2em;
+  background: #303030;
+  text-align: left;
+  overflow: hidden;
+}
