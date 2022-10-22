@@ -49,7 +49,7 @@
   width: 100%;
   z-index: 1;
 }
-.space {
+.spaceFirstScreen {
   padding-bottom: 140px;
 }
 .hero-title {
@@ -101,13 +101,6 @@ h3,
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-.error-msg {
-  color: #ffa00a;
-  font-size: 15px;
-  margin-bottom: -6px;
-  padding: 6px 3px;
-  text-align: left;
 }
 .material-symbols-outlined.error {
   font-size: 20px;
@@ -313,6 +306,3 @@ h3,
   width: 75%;
   max-width: 815px;
 }
-
-
-

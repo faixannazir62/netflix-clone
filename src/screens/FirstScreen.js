@@ -18,7 +18,7 @@ function FirstScreen() {
           <div className="bg-gradient"></div>
         </div>
         <div className="hero-text-from">
-          <div className="space"></div>
+          <div className="spaceFirstScreen"></div>
           <h1 className="hero-title">Unlimited movies, TV shows and more.</h1>
           <h2 className="hero-sub-title">Watch anywhere. Cancel anytime.</h2>
 

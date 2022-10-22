@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Nav.css";
 
-function Nav() {
+function Nav({ SingInClassN }) {
   const Navigate = useNavigate();
   const [show, handleShow] = useState(false);
   const transitionNavBar = () => {
@@ -19,7 +19,7 @@ function Nav() {
   }, []);
 
   return (
-    <div className={`nav ${show && "nav__black"}`}>
+    <div className={`nav ${show && "nav__black"} ${SingInClassN}`}>
       <div className="nav__content">
         <img
           onClick={() => Navigate("/")}

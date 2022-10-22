@@ -13,8 +13,8 @@
   justify-content: space-between;
 }
 .nav__logo {
- height: 2.25rem;
-    width: 8.375rem;
+  height: 2.25rem;
+  width: 8.375rem;
 
   object-fit: contain;
   cursor: pointer;
@@ -36,7 +36,16 @@
   color: #fff;
   margin-top: 0.5rem;
 }
-
+.display-none .nav__logo {
+  height: 4.25rem;
+  width: 10.375rem;
+}
+.display-none .redButton {
+  display: none;
+}
+.display-none.nav {
+  position: relative;
+}
 /* for sticky header */
 .nav__black {
   background-color: #111;
