@@ -31,6 +31,11 @@
   padding: 7px 17px;
   border: none;
 }
+.signUpNav .authLinks.redButton {
+  background-color: transparent;
+  color: #000;
+  font-weight: 700;
+}
 .authLinks {
   border-radius: 3px;
   color: #fff;
@@ -43,8 +48,23 @@
 .display-none .redButton {
   display: none;
 }
-.display-none.nav {
+.display-none.nav,
+.signUpNav.nav {
   position: relative;
+}
+.nav__black.display-none.nav,
+.nav__black.signUpNav.nav {
+  background-color: transparent;
+}
+.signOutBtn {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 1rem;
 }
 /* for sticky header */
 .nav__black {

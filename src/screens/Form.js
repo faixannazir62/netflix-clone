@@ -1,17 +1,21 @@
 import React from "react";
 import "./FirstScreen.css";
 import { useFormik } from "formik";
-import { signup } from "./FormValidation";
-function Form() {
+import { signupEmail } from "./FormValidation";
+import { useNavigate } from "react-router-dom";
+import SignUpMainScreen from "../innerComponents/SignUpMainScreen";
+function Form({ setUsername }) {
+  const Navigate = useNavigate();
   const initialValues = {
     email: "",
   };
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: initialValues,
-      validationSchema: signup,
+      validationSchema: signupEmail,
       onSubmit: (values) => {
-        console.log(values.email);
+        setUsername(values.email);
+        Navigate("/signup");
       },
     });
   return (
@@ -43,6 +47,7 @@ function Form() {
           </button>
         </div>
       </div>
+      {/*sendig data to child */}
     </form>
   );
 }

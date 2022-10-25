@@ -5,7 +5,7 @@ import { faqs } from "./AccordionData";
 import "./FirstScreen.css";
 import Form from "./Form";
 
-function FirstScreen() {
+function FirstScreen({ setUsername }) {
   return (
     <div className="main-container">
       <Nav />
@@ -23,7 +23,7 @@ function FirstScreen() {
           <h2 className="hero-sub-title">Watch anywhere. Cancel anytime.</h2>
 
           {/* signup itput form */}
-          <Form />
+          <Form setUsername={setUsername} />
         </div>
       </div>
       <div className="animation-section one">
@@ -152,7 +152,7 @@ function FirstScreen() {
             ))}
           </ul>
           {/* Bottom signup form */}
-          <Form />
+          <Form setUsername={setUsername} />
         </div>
       </div>
     </div>

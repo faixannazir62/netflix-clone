@@ -1,12 +1,20 @@
+import React, { useState, useEffect } from "react";
 import Row from "../Row";
 import requests from "../requests";
 import Banner from "../Banner";
+import { useNavigate } from "react-router-dom";
 import Nav from "../Nav";
 
-function HomeScreen() {
+function HomeScreen({ user, setUser }) {
+  const Navigate = useNavigate();
+  useEffect(() => {
+    if (!user) {
+      Navigate("/");
+    }
+  }, []);
   return (
     <div className="App">
-      <Nav />
+      <Nav user={user} setUser={setUser} />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../Nav";
 import "./SignIn.css";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { signInForm } from "./FormValidation";
-function SingIn() {
+import { app } from "../screens/FirebaseConfig";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+function SingIn({ setUser }) {
   const Navigate = useNavigate();
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+  const authentication = getAuth(app);
   const initialValues = {
     username: "",
     password: "",
@@ -15,8 +20,29 @@ function SingIn() {
       initialValues: initialValues,
       validationSchema: signInForm,
       onSubmit: (values) => {
-        console.log(values.username);
-        console.log(values.password);
+        signInWithEmailAndPassword(
+          authentication,
+          values.username,
+          values.password
+        )
+          .then((response) => {
+            setError(false);
+            setUser(true);
+            sessionStorage.setItem(
+              "Auth Token",
+              response._tokenResponse.refreshToken
+            );
+            Navigate("/homescreen");
+          })
+          .catch((errors) => {
+            if (errors.code === "auth/wrong-password") {
+              setErrorMsg("Password is incorrect!");
+            }
+            if (errors.code === "auth/user-not-found") {
+              setErrorMsg("Email id is invalid!");
+            }
+            setError(true);
+          });
       },
     });
   return (
@@ -24,6 +50,12 @@ function SingIn() {
       <Nav SingInClassN={"display-none"} />
       <div className="signin-innerbox">
         <form onSubmit={handleSubmit}>
+          {error ? (
+            <p className="signInErrorMsg">
+              <span class="material-symbols-outlined danger">warning</span>
+              {errorMsg}
+            </p>
+          ) : null}
           <div className="signin-form-innerBox">
             <div className="signinText">
               <h1>Sign In</h1>

@@ -1,6 +1,10 @@
+* {
+  font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 .App {
   background-color: #111;
 }
+
 button {
   cursor: pointer;
 }
@@ -10,4 +14,24 @@ button {
   margin-bottom: -6px;
   padding: 6px 3px;
   text-align: left;
+}
+.copyright {
+  text-align: center;
+  padding: 7px 0;
+  background-color: #111;
+  border: none;
+}
+.copyright h1 {
+  font-size: 1rem;
+  font-family: cursive;
+}
+.copyright .material-symbols-outlined.heart {
+  color: red;
+  font-weight: 900;
+  font-size: 1rem;
+}
+@media only screen and (max-width:700px){
+  .error-msg {
+  font-size: 10px !important;}
+
 }

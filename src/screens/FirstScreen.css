@@ -153,8 +153,16 @@ h3,
     flex-direction: column;
     align-items: center;
   }
-  .hero-text-from form input {
-    min-width: 90%;
+  .input-div {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sgInputField {
+    min-width: 100%;
+    width: 100%;
+  }
+  .bg-img-gd img {
+    height: 700px;
   }
   .animation-section {
     text-align: center;
@@ -164,6 +172,20 @@ h3,
     width: 100% !important;
     padding: 0 !important;
   }
+  .acc-title {
+    font-size: 1.125rem !important;
+  }
+  .acc-icon {
+
+    right: 10px !important;
+}
+  .question {
+    font-size: 1rem !important;
+  }
+  .copyright h1 {
+    font-size: 0.7rem !important;
+  }
+
 }
 .animation-section {
   z-index: 0;

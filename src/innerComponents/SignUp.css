@@ -1,0 +1,98 @@
+.signUpMainC {
+  overflow: hidden;
+}
+.signup-main-c {
+  padding: 100px 0;
+}
+.topIcons {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png)
+    no-repeat 50% 50%;
+  background-size: 260px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+.sigupTitle h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.signUpDescr {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.signUpDescr p {
+  font-size: 18px;
+}
+.navbar {
+  height: 90px;
+  border-bottom: 1px solid rgb(58, 58, 58);
+  width: 100%;
+}
+.sigupTitle p,
+.sigupTitle h1 {
+  color: #000;
+}
+.inner-signUp-C {
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inner-signUp-CSec {
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: left;
+}
+.submitBtn {
+  padding: 20.5px 2em;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 64px;
+}
+
+.sigupTitle.sec {
+  text-align: left;
+}
+.sigupTitle.sec h1 {
+  font-size: 27px;
+  font-weight: 700;
+}
+.sigupTitle.sec span {
+  font-size: 13px;
+  text-align: inherit;
+}
+.signUpDescrsec p {
+  text-align: left;
+  margin-bottom: 13px;
+}
+.signUpDescrsec p:last-child {
+  margin-bottom: 0;
+}
+.signUpFrm input {
+  font-size: 16px;
+  width: 94%;
+  padding: 15px 10px;
+}
+.signUpFrm input[type="text"] {
+  margin: 20px 0 10px;
+}
+.signInErrorMsg {
+  margin-bottom: 10px;
+  background: #ffa00a;
+  color: #fff;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined.danger {
+  margin-right: 10px;
+}
+@media only screen and (max-width:700px) {
+  .inner-signUp-CSec {
+    max-width: 90%;
+  }
+  .signUpFrm input[type="text"] {
+    margin: 20px 0 0;
+}
+.error-msg {
+    margin-bottom: 10px !important;
+}
+}
