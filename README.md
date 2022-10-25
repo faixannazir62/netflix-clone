@@ -25,3 +25,25 @@ website screenshot
 
 <h3>React Router</h3>
 <h6>Complex and dynamic route generation</h6>
+
+<h1>Implementation Highlights</h1>
+
+<p>Netflix clone made with React, Redux & Firebase which uses axios to asynchronously fetch movie data of over 30 thousand movies from TMDb api. Features include user signup and signin, in app trailer playing, dynamically generated movie and tv show pages and an interactive UI replicated from the original netflix app.</p>
+
+<h1>User Stories</h1>
+<ul>
+<li>Users can safely sign up and sign in, google sign in enabled with firebase</li>
+<li>Details include imdb rating, cast info, trailer links</li>
+<li>Original netflix UI replicated with highly organized and advanced css styling</li>
+<li>Collections of popular movies and tvshows by genre</li>
+</ul>
+
+<h1>Author</h1>
+<ul>
+<li>Faizan Nazir</li>
+</ul>
+
+<h1>License</h1>
+<ul>
+<li>Full credit for API data to TMDb API.</li>
+</ul>
