@@ -1,6 +1,7 @@
 <h1>Netflix Clone</h1>
-Netflix Clone using TMDb API made with React, Redux, and Firebase w/ Firestore integrated Stripe subscription
-<p style="height:4px;background:gray;width:100%"></d >
+
+<h5>Netflix Clone using TMDb API made with React, Redux, and Firebase w/ Firestore integrated Stripe subscription</h5>
+<p style="height:10px;background:gray;width:100%"></d >
 
 Demo:[link ](https://netflix-clone-498b9.web.app/)
 
